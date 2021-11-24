@@ -1,0 +1,41 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
+    "extends": [
+      "react-app",
+      "eslint:recommended",
+      "plugin:prettier/recommended", 
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended"],
+    "rules": {
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "no-console": "warn",
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": [
+        "warn",
+        {
+          "vars": "all",
+          "varsIgnorePattern": "^_",
+          "args": "after-used",
+          "argsIgnorePattern": "^_"
+        }
+      ],
+      "prettier/prettier": [
+        "warn",
+        {
+          "singleQuote": true,
+          "trailingComma": "es5",
+          "bracketSpacing": true,
+          "semi": true,
+          "endOfLine": "auto",
+          "overrides": [
+            {
+              "files": ".prettierrc",
+              "options": { "parser": "json" }
+            }
+          ]
+        }
+      ]
+    }
+  }

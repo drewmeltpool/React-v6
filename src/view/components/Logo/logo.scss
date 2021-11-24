@@ -1,0 +1,17 @@
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #6e41e226;
+}
+
+@media (max-width: 768px) {
+    .logo {        
+        height: 48px;
+        width: 48px;
+        font-size: 10px;
+    }
+}

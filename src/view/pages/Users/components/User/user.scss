@@ -1,0 +1,72 @@
+.user {
+    border-bottom: 1px solid #dbdbdb;
+    display: flex;
+    padding: 10px;
+}
+
+.user-info {
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.user-initials {
+    font-weight: 700;
+    color: #fff;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    border-radius: 6px;
+}
+
+.user-name {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.user-email {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.user-btn {
+    margin-left: auto;
+}
+
+.user--primary {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.user--secondary {
+    color: #fff;
+    background-color: #6c757d;
+}
+
+.user--danger {
+    color: #fff;
+    background-color: #dc3545;
+}
+
+.user--warning {
+    background-color: #ffc107;
+}
+
+.user--info {
+    color: #fff;
+    background-color: #17a2b8;
+}
+
+.user--dark {
+    color: #fff;
+    background-color: #343a40;
+}
+
+.user--purple {
+    color: #fff;
+    background-color: #6E41E2;
+}

@@ -1,0 +1,29 @@
+.upload-image-wrapper {
+    padding: 15px 0;
+    border-bottom: 1px solid #dbdbdb;
+    display: flex;
+}
+
+.upload-image {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.upload-image-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.upload-image-name {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.upload-image-btn {
+    margin-left: auto;
+    font-size: 24px;
+}

@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Toast from './view/components/Toast';
+
+import './index.scss';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Toast>
+      <Router>
+        <App />
+      </Router>
+    </Toast>
   </React.StrictMode>,
   document.getElementById('root')
 );

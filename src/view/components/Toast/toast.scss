@@ -1,0 +1,11 @@
+.toast {
+	color: #2a2a2a;
+	position: fixed;
+	z-index: 999;
+	bottom: 15px;
+	right: 15px;
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+}

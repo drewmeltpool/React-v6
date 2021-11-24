@@ -1,0 +1,21 @@
+.stat-box {
+    display: grid;
+    grid-gap: 20px;
+    margin-bottom: 20px;
+}
+
+.stat-box--1 {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.stat-box--2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.stat-box--3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.stat-box--4 {
+    grid-template-columns: repeat(4, 1fr);
+}
