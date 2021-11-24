@@ -39,15 +39,18 @@ const SignIn: React.FC = () => {
       }}
     >
       {() => (
-        <div className="sign-form-outter">
+        <div className="sign-form-outter sign-in-wrapper">
           <Form className="form sign-form card">
             <Title variant="secondary">Sign in</Title>
             <Input placeholder="Email" variant="primary" name="email" />
-            <Input placeholder="Password" variant="primary" name="password" />
+            <Input
+              placeholder="Password"
+              type="password"
+              variant="primary"
+              name="password"
+            />
             <Button type="submit" outline variant="primary" text="Sign in" />
           </Form>
-
-          <Image className="sign-image" src={signInImage} />
         </div>
       )}
     </Formik>

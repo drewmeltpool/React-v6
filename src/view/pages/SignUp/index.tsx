@@ -6,8 +6,6 @@ import Button from '../../components/Button';
 import Notification from '../../components/Notification';
 import { useToast } from '../../../hooks/useToast';
 import { Link, useNavigate } from 'react-router-dom';
-import Image from '../../components/Image';
-import signUpImage from '../../../assets/images/sign-up.svg';
 import Title from '../../components/Title';
 import Text from '../../components/Text';
 import './signUp.scss';
@@ -41,12 +39,17 @@ const SignUp: React.FC = () => {
       }}
     >
       {() => (
-        <div className="sign-form-outter">
+        <div className="sign-form-outter sign-up-wrapper">
           <Form className="form sign-form card">
             <Title variant="secondary">Sign up</Title>
             <Input placeholder="Email" variant="primary" name="email" />
             <Input placeholder="User name" variant="primary" name="userName" />
-            <Input placeholder="Password" variant="primary" name="password" />
+            <Input
+              placeholder="Password"
+              type="password"
+              variant="primary"
+              name="password"
+            />
             <Button type="submit" variant="primary" text="Sign up" />
 
             <Text>
@@ -56,7 +59,6 @@ const SignUp: React.FC = () => {
               </Link>
             </Text>
           </Form>
-          <Image className="sign-image" src={signUpImage} />
         </div>
       )}
     </Formik>

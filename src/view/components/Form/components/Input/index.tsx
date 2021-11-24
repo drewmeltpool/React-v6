@@ -14,9 +14,10 @@ interface IInput {
   variant?: InputVariant;
   placeholder?: string;
   className?: string;
+  [key: string]: any;
 }
 
-const Input: React.FC<IInput> = ({ name, variant, placeholder }) => {
+const Input: React.FC<IInput> = ({ name, variant, placeholder, ...rest }) => {
   return (
     <Field name={name}>
       {({ meta }: any) => (
@@ -32,6 +33,7 @@ const Input: React.FC<IInput> = ({ name, variant, placeholder }) => {
             className="input-value"
             name={name}
             placeholder={variant ? '' : placeholder}
+            {...rest}
           />
 
           {!!meta.error && meta.touched && (
