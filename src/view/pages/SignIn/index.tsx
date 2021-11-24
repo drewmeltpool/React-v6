@@ -5,9 +5,7 @@ import { Input } from '../../components/Form';
 import Button from '../../components/Button';
 import Notification from '../../components/Notification';
 import { useToast } from '../../../hooks/useToast';
-import Image from '../../components/Image';
 import { useNavigate } from 'react-router-dom';
-import signInImage from '../../../assets/images/sign-in.svg';
 
 import './signIn.scss';
 import Title from '../../components/Title';
