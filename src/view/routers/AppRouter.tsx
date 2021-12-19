@@ -8,6 +8,7 @@ import Sign from '../layout/Sign';
 import Admin from '../pages/Admin';
 import AdminHome from '../pages/AdminHome';
 import Home from '../pages/Home';
+import PhotoEditor from '../pages/PhotoEditor';
 import Settings from '../pages/Settings';
 
 import SignIn from '../pages/SignIn';
@@ -24,6 +25,7 @@ const AppRouter: React.FC = () => (
       <Route path="settings" element={<Settings />} />
       <Route path="notifications" element={<Button text="not" />} />
     </Route>
+    <Route path="editor" element={<PhotoEditor />} />
     <Route path="/*" element={<Common />}>
       <Route path="" element={<Home />} />
       <Route path="/*" element={<Sign />}>
