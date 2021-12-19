@@ -10,7 +10,6 @@ const Common: React.FC = () => {
     <div className="page">
       <Navbar>
         <Logo />
-
         <div className="navbar-box">
           <Link to="/sign-up" className="nav-link link">
             <Button text="Sign up" outline variant="primary" />

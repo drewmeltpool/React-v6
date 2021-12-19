@@ -1,2 +1,8 @@
 @import './reset';
 @import './default';
+
+@import '../../view/components/Button/button.scss';
+
+@import '../../view/pages/Admin/admin.scss';
+@import '../../view/pages/Users/components/User/user.scss';
+@import '../../view/pages/PhotoEditor/editor.scss';

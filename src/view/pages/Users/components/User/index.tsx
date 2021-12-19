@@ -5,7 +5,6 @@ import Button from '../../../../components/Button';
 import classNames from '../../../../../utils/classNames';
 import initials from '../../../../../utils/initials';
 import { randomIndex } from '../../../../../utils/randomIndex';
-import './user.scss';
 
 interface IUser {
   name: string;

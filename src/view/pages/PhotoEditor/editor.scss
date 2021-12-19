@@ -1,0 +1,12 @@
+.tui-image-editor-header-logo {
+  & > img {
+    display: none;
+  }
+
+  &:after {
+    content: 'DigitizedYourImage';
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #fff;
+  }
+}

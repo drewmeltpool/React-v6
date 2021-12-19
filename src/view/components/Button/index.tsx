@@ -1,6 +1,5 @@
 import React from 'react';
 import classNames from '../../../utils/classNames';
-import './button.scss';
 
 type VariantType = 'primary' | 'icon' | 'danger';
 

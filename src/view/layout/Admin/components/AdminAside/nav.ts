@@ -1,6 +1,7 @@
 import {
   faBell,
   faCog,
+  faEdit,
   faFolder,
   faHome,
   faUser,
@@ -18,9 +19,9 @@ export const navs = [
     icon: faUser,
   },
   {
-    to: 'profile',
-    text: 'Profile',
-    icon: faUser,
+    to: '/editor',
+    text: 'Editor',
+    icon: faEdit,
   },
   {
     to: 'folder',

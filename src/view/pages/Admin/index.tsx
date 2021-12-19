@@ -6,24 +6,19 @@ import FlatList from '../../components/FlatList';
 import Title from '../../components/Title';
 import Image from '../../components/Image';
 import { useFetch } from '../../../hooks/useFetch';
-import './admin.scss';
+import { Link } from 'react-router-dom';
 
 const Admin: React.FC = () => {
-  const { data } = useFetch(
+  const { data = [] } = useFetch(
     'https://api.unsplash.com/photos/?client_id=G36HLpMpORyLoY45oF9Vqy1GjIrGA3zI22zvPOOCnzQ'
   );
 
   return (
     <>
-      <Button
-        variant="primary"
-        text={
-          <>
-            <Icon className="icon" icon={faPlus} />
-            Add image
-          </>
-        }
-      />
+      <Link to="/editor" className="btn btn--primary link">
+        <Icon className="icon" icon={faPlus} />
+        Open Editor
+      </Link>
       <Title variant="primary">Images</Title>
       <FlatList
         data={data}

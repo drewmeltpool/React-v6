@@ -2,6 +2,7 @@
     padding: 15px 0;
     border-bottom: 1px solid #dbdbdb;
     display: flex;
+    align-items: center;
 }
 
 .upload-image {
@@ -12,6 +13,7 @@
 }
 
 .upload-image-info {
+    flex: 1;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -24,6 +26,8 @@
 }
 
 .upload-image-btn {
-    margin-left: auto;
-    font-size: 24px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
 }

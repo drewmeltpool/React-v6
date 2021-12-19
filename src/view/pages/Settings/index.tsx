@@ -13,7 +13,12 @@ const Settings: React.FC = () => {
         Settings
       </Title>
       <Formik
-        initialValues={{ token: '', email: '' }}
+        initialValues={{
+          token: '',
+          email: '',
+          archiveDestination: '',
+          folderDestination: '',
+        }}
         onSubmit={(_, action) => action.resetForm()}
       >
         {({ resetForm }) => (
@@ -24,12 +29,12 @@ const Settings: React.FC = () => {
             <Input variant="primary" name="token" placeholder="Access token" />
             <Input
               variant="primary"
-              name="token"
+              name="archiveDestination"
               placeholder="Arhive destination"
             />
             <Input
               variant="primary"
-              name="token"
+              name="folderDestination"
               placeholder="Folder destination"
             />
             <Checkbox name="email" placeholder="Get messages on my email" />

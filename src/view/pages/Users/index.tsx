@@ -5,7 +5,7 @@ import { useFetch } from '../../../hooks/useFetch';
 import User from './components/User';
 
 const Users: React.FC = () => {
-  const { data } = useFetch('https://jsonplaceholder.typicode.com/users');
+  const { data = [] } = useFetch('https://jsonplaceholder.typicode.com/users');
 
   return (
     <>
